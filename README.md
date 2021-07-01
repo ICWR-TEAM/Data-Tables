@@ -1,2 +1,2 @@
-# Data-Tables
-Data tables
+# Data-Tables-Ajax
+Data tables Ajax
