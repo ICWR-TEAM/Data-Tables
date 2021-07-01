@@ -46,13 +46,3 @@ function create_table(tagid, data) {
     table.appendChild(tbody);
 
 }
-
-json_data = [
-    ["1", "Tes data table", 'This Data Table', [
-            ['asdas', '?', 'btn btn-primary mx-1'],
-            ['asdas', '?', 'btn btn-danger mx-1']
-        ]
-    ]
-];
-
-create_table('tables', json_data);
