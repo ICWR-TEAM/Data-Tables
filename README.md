@@ -3,7 +3,7 @@ Data tables support for ajax with array javascript format
 
 example use
 
-javascript```
+```javascript
 json_data = [
     [
         "1",
