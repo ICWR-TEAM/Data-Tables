@@ -13,9 +13,7 @@ var js_array = [
         [
             ['asdas', 'https://incrustwerush.org', 'btn btn-primary mx-1'],
             ['asdas', 'https://www.google.com', 'btn btn-danger mx-1']
-        ],
-        "tes"
-
+        ]
     ]
 ];
 
