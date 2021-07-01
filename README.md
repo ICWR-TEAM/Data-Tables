@@ -1,7 +1,7 @@
 # Data-Tables
 Data tables support for ajax with array javascript format
 
-example use
+Example use :
 
 ```javascript
 json_data = [
