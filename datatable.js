@@ -1,3 +1,6 @@
+// Created by Afrizal F.A - incrustwerush.org
+// Copyright ©2021 - incrustwerush.org
+
 function create_table(tagid, data) {
 
     var table = document.getElementById(tagid);
