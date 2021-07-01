@@ -4,7 +4,7 @@ Data tables support for ajax with array javascript format.
 Example :
 
 ```javascript
-js_array = [
+var js_array = [
     [
         "1",
         "Tes data table", 
