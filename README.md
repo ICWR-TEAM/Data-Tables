@@ -4,7 +4,7 @@ Data tables support for ajax with array javascript format.
 Example :
 
 ```javascript
-var id_tag = 'tables';
+var tag_id = 'tables';
 var js_array = [
     [
         "1",
@@ -19,5 +19,5 @@ var js_array = [
     ]
 ];
 
-create_table(id_tag, js_array);
+create_table(tag_id, js_array);
 ```
