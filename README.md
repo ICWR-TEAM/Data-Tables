@@ -11,8 +11,8 @@ var js_array = [
         "Tes data table", 
         'This Data Table', 
         [
-            ['asdas', 'https://incrustwerush.org', 'btn btn-primary mx-1'],
-            ['asdas', 'https://www.google.com', 'btn btn-danger mx-1']
+            ['incrustwerush.org', 'https://incrustwerush.org', 'btn btn-primary mx-1'],
+            ['Google.com', 'https://www.google.com', 'btn btn-danger mx-1']
         ]
     ]
 ];
