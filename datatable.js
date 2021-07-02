@@ -22,7 +22,6 @@ function create_table(tag_id, tag_class, data) {
                 attr.appendChild(document.createTextNode(attributes[0]));
                 th.appendChild(attr);
                 
-
             });
 
             row.appendChild(th);
@@ -39,7 +38,6 @@ function create_table(tag_id, tag_class, data) {
 
     thead.appendChild(row);
     table.appendChild(thead);
-
     var tbody = document.createElement('tbody');
 
     data[1].forEach(function(tr) {
@@ -59,7 +57,6 @@ function create_table(tag_id, tag_class, data) {
                     act.className = action[2];
                     act.appendChild(document.createTextNode(action[0]));
                     td.appendChild(act);
-                    
 
                 });
 
