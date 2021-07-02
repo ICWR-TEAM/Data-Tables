@@ -8,13 +8,11 @@ var tag_id = "tables";
 var class_tag = "table m-0";
 var js_array = [
     [
+        "No",
+        "Name",
+        "Detail",
         [
-            "No",
-            "Name",
-            "Detail",
-            [
-                ['Action', 'font-italic']
-            ]
+            ['Action', 'font-italic']
         ]
     ],
     [
