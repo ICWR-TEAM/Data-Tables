@@ -1,12 +1,48 @@
 // Created by Afrizal F.A - incrustwerush.org
 // Copyright ©2021 - incrustwerush.org
 
-function create_table(tag_id, data) {
+function create_table(tag_id, tag_class, data) {
 
-    var table = document.getElementById(tag_id);
+    var div = document.getElementById(tag_id);
+    var table = document.createElement('table');
+    table.className = tag_class;
+    var thead = document.createElement('thead');
+    var row = document.createElement('tr');
+
+    data[0][0].forEach(function(trdata) {
+
+        if (Array.isArray(trdata)) {
+
+            var th = document.createElement('th');
+            
+            trdata.forEach(function(attributes) {
+
+                var attr = document.createElement('b');
+                attr.className = attributes[1];
+                attr.appendChild(document.createTextNode(attributes[0]));
+                th.appendChild(attr);
+                
+
+            });
+
+            row.appendChild(th);
+
+        } else {
+
+            var th = document.createElement('th');
+            th.appendChild(document.createTextNode(trdata));
+            row.appendChild(th);
+
+        }
+
+    });
+
+    thead.appendChild(row);
+    table.appendChild(thead);
+
     var tbody = document.createElement('tbody');
 
-    data.forEach(function(tr) {
+    data[1].forEach(function(tr) {
 
         var row = document.createElement('tr');
 
@@ -44,5 +80,6 @@ function create_table(tag_id, data) {
     });
 
     table.appendChild(tbody);
+    div.appendChild(table);
 
 }
