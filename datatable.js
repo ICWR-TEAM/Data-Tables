@@ -9,7 +9,7 @@ function create_table(tag_id, tag_class, data) {
     var thead = document.createElement('thead');
     var row = document.createElement('tr');
 
-    data[0][0].forEach(function(trdata) {
+    data[0].forEach(function(trdata) {
 
         if (Array.isArray(trdata)) {
 
