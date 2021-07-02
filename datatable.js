@@ -29,7 +29,9 @@ function create_table(tag_id, tag_class, data) {
         } else {
 
             var th = document.createElement('th');
-            th.appendChild(document.createTextNode(trdata));
+            var attr = document.createElement('b');
+            attr.appendChild(document.createTextNode(trdata));
+            th.appendChild(attr);
             row.appendChild(th);
 
         }
