@@ -18,13 +18,49 @@ var js_array = [
     [
         [
             "1",
-            "Tes data table", 
-            'This Data Table', 
+            "Tes data table 1", 
+            'This Data Table 1', 
             [
-                ['incrustwerush.org', 'https://incrustwerush.org', 'btn btn-primary mx-1'],
-                ['Google.com', 'https://www.google.com', 'btn btn-danger mx-1']
+                [
+                    'a',
+                    [
+                        ['href', "https://incrustwerush.org"],
+                        ['class', "btn btn-primary mx-1"]
+                    ],
+                    'incrustwerush.org'
+                ],
+                [
+                    'button',
+                    [
+                        ['onclick', "window.location.href = 'https://incrustwerush.org';"],
+                        ['class', "btn btn-danger mx-1"]
+                    ],
+                    'incrustwerush.org'
+                ]
             ]
-
+        ],
+        [
+            "2",
+            "Tes data table 2", 
+            'This Data Table 2', 
+            [
+                [
+                    'a',
+                    [
+                        ['href', "https://incrustwerush.org"],
+                        ['class', "btn btn-primary mx-1"]
+                    ],
+                    'incrustwerush.org'
+                ],
+                [
+                    'button',
+                    [
+                        ['onclick', "window.location.href = 'https://incrustwerush.org';"],
+                        ['class', "btn btn-danger mx-1"]
+                    ],
+                    'incrustwerush.org'
+                ]
+            ]
         ]
     ]
 ];
