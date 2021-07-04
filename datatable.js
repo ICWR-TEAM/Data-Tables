@@ -1,6 +1,25 @@
 // Created by Afrizal F.A - incrustwerush.org
 // Copyright ©2021 - incrustwerush.org
 
+function generate_tag(tag_id, action) {
+
+    var act = document.createElement(action[0]);
+
+    if (Array.isArray(action[1])) {
+
+        action[1].forEach(function(attrib) {
+
+            act.setAttribute(attrib[0], attrib[1]);
+
+        });
+
+    }
+
+    act.appendChild(document.createTextNode(action[2]));
+    tag_id.appendChild(act);
+
+}
+
 function create_table(tag_id, tag_class, data) {
 
     if (Array.isArray(data)) {
@@ -63,11 +82,7 @@ function create_table(tag_id, tag_class, data) {
                         
                         trdata.forEach(function(action) {
         
-                            var act = document.createElement('a');
-                            act.href = action[1]
-                            act.className = action[2];
-                            act.appendChild(document.createTextNode(action[0]));
-                            td.appendChild(act);
+                            generate_tag(td, action);
         
                         });
         
