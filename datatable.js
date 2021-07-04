@@ -1,13 +1,15 @@
 // Created by Afrizal F.A - incrustwerush.org
 // Copyright ©2021 - incrustwerush.org
 
-function generate_tag(tag_id, action) {
+function generate_tag(tag_id, action)
+{
 
     var act = document.createElement(action[0]);
 
     if (Array.isArray(action[1])) {
 
-        action[1].forEach(function(attrib) {
+        action[1].forEach(function(attrib)
+        {
 
             act.setAttribute(attrib[0], attrib[1]);
 
@@ -20,7 +22,8 @@ function generate_tag(tag_id, action) {
 
 }
 
-function create_table(tag_id, tag_class, data) {
+function create_table(tag_id, tag_class, data)
+{
 
     if (Array.isArray(data)) {
 
@@ -32,13 +35,15 @@ function create_table(tag_id, tag_class, data) {
 
         if (data[0].length !== 0) {
 
-            data[0].forEach(function(trdata) {
+            data[0].forEach(function(trdata)
+            {
 
                 if (Array.isArray(trdata)) {
         
                     var th = document.createElement('th');
                     
-                    trdata.forEach(function(attributes) {
+                    trdata.forEach(function(attributes)
+                    {
         
                         var attr = document.createElement('b');
                         attr.className = attributes[1];
@@ -70,17 +75,20 @@ function create_table(tag_id, tag_class, data) {
 
             var tbody = document.createElement('tbody');
     
-            data[1].forEach(function(tr) {
+            data[1].forEach(function(tr)
+            {
         
                 var row = document.createElement('tr');
         
-                tr.forEach(function(trdata) {
+                tr.forEach(function(trdata)
+                {
         
                     if (Array.isArray(trdata)) {
         
                         var td = document.createElement('td');
                         
-                        trdata.forEach(function(action) {
+                        trdata.forEach(function(action)
+                        {
         
                             generate_tag(td, action);
         
